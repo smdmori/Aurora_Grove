@@ -1,0 +1,4 @@
+final
+*.code-workspace
+.ds_store
+*.map

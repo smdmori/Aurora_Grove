@@ -1,10 +1,15 @@
 // custom styles
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Marhey", cursive;
+}
+
+h1 {
+  font-family: "Alkalami", serif;
 }
 
 p {
   font-weight: 100;
+  line-height: 2;
 }
 
 .navbar {
@@ -47,6 +52,11 @@ p {
 
   #header {
     z-index: 1;
+
+    h1 {
+      font-weight: 900;
+      line-height: 1.5;
+    }
   }
 
   h1 {
@@ -77,6 +87,10 @@ p {
 .section-carousel {
   .row div:nth-child(2) {
     text-align: justify;
+  }
+
+  p.lead {
+    line-height: 1.4;
   }
 }
 
@@ -119,13 +133,13 @@ p {
   text-align: center;
   font-size: 120%;
   position: relative;
-  color: rgba(204, 42, 93, 1);
+  color: #c80005;
 
   &.hearts {
     > .particle {
       opacity: 0;
       position: absolute;
-      background-color: rgba(204, 42, 93, 1);
+      background-color: #c80005;
       animation: hearts 3s ease-in infinite;
       &:before,
       &:after {
@@ -136,7 +150,7 @@ p {
         left: 0px;
         width: 100%;
         height: 100%;
-        background-color: rgba(204, 42, 93, 1);
+        background-color: #c80005;
       }
       &:before {
         transform: translateX(-50%);
@@ -162,4 +176,8 @@ p {
     opacity: 0;
     transform: translate(0, -1000%) rotate(45deg); //Big hearts move faster
   }
+}
+
+p.lead {
+  line-height: 2.2;
 }
